@@ -7,7 +7,7 @@
 } */
 
 /* [class*="col"]{
-    border: 1px dotted orange;
+    border: 4px dotted orange;
 } */
 
 /* --------------------------------------------- */
@@ -30,4 +30,29 @@
 
 .search img{
     width: 30px;
+}
+
+
+/* Sezione 1 returnal */
+#returnal{
+    background-image: url("../img/jumbo-bg.png");
+    height: 680px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center top;
+    padding-bottom: 80px;
+}
+
+.logo_jumbo{
+    width: 100%;
+}
+
+.wrapper_returnal img{
+    width: 200px;
+    display: block;
+}
+
+.btn_returnal{
+    background-color: #cd3d0f;
+    border: none;
 }
