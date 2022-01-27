@@ -20,3 +20,14 @@
 .logo_header .logo img{
     width: 90px;
 }
+
+
+/* Nav */
+.search{
+    border: none;
+    background-color: transparent;
+}
+
+.search img{
+    width: 30px;
+}
