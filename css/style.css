@@ -1,0 +1,22 @@
+/* .container-fluid{
+    border: 2px solid red;
+} */
+
+/* .row{
+    border: 2px dashed blue;
+} */
+
+/* [class*="col"]{
+    border: 1px dotted orange;
+} */
+
+/* --------------------------------------------- */
+
+/* Header */
+.logo_header{
+    padding: 10px 15px;
+}
+
+.logo_header .logo img{
+    width: 90px;
+}
