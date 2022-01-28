@@ -126,3 +126,14 @@
     background-position: center top;
     padding-bottom: 80px;
 }
+
+/* Sezione 5 nuove uscite */
+#new_releases{
+    background-color: #1f1f1f;
+}
+
+#new_releases .card_wrapper img{
+    width: 100%;
+    display: block;
+    border-radius: 20px;
+}
