@@ -78,3 +78,41 @@
     border-radius: 15px;
     transform: scale(0.97);
 }
+
+/* Sezione 3 play5 */
+#play5 h4{
+    color: #137dd1;
+}
+
+#play5 h5{
+    color: #a5a5a5;
+}
+
+#play5 img{
+    width: 100%;
+    display: block;
+}
+
+#play5 .row:nth-child(3) img{
+    width: 50%;
+    display: block;
+    opacity: 0.6;
+}
+
+#play5 .row:nth-child(3) h6{
+    color: #8a8a8a;
+}
+
+#play5 .row:nth-child(3) [class*="col"]:hover{
+    border-bottom: 3px solid #1f83d4;
+    cursor: pointer;
+}
+
+#play5 .row:nth-child(3) [class*="col"]:hover img{
+    opacity: 1;
+    transition: all 200ms linear;
+}
+
+#play5 .row:nth-child(3) [class*="col"]:hover h6{
+    color: black;
+}
