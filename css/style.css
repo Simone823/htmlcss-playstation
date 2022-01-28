@@ -116,3 +116,13 @@
 #play5 .row:nth-child(3) [class*="col"]:hover h6{
     color: black;
 }
+
+/* Sezione 4 it takes two */
+#it_takes_two{
+    background-image: url("../img/it-takes-two-hero-banner-desktop.jpg");
+    height: 680px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center top;
+    padding-bottom: 80px;
+}
