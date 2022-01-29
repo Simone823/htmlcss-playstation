@@ -137,3 +137,8 @@
     display: block;
     border-radius: 20px;
 }
+
+/* Sezione 6 esplora play4 */
+#play4 .card{
+    border: none;
+}
