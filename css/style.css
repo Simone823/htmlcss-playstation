@@ -183,3 +183,13 @@
     color: blue;
     transition: color 100ms ease-in-out;
 }
+
+/* Sezione 9 nuovi sconti Play Store */
+#discounts h6{
+    color: #a5a5a5;
+}
+
+#discounts img{
+    width: 100%;
+    display: block;
+}
