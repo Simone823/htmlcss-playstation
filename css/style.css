@@ -163,3 +163,23 @@
     background-color: #d9dadc;
     border: none;
 }
+
+/* Sezione 8 playstation plus */
+#ps_now{
+    background-color: #161c3b;
+}
+
+#ps_now .row:first-child img{
+    width: 250px;
+    display: block;
+}
+
+#ps_now .row .col-12.col-md-6:nth-child(2) img{
+    width: 100%;
+    display: block;
+}
+
+#ps_now .btn.btn-light:hover{
+    color: blue;
+    transition: color 100ms ease-in-out;
+}
