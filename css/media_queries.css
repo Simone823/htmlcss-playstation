@@ -1,0 +1,6 @@
+@media all and (max-width: 575px) {
+    #ps_plus,
+    #ps_now{
+        padding: 25px 0;
+    }
+}
