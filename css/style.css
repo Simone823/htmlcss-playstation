@@ -199,3 +199,31 @@
     width: 90%;
     display: block;
 }
+
+/* Footer */
+footer{
+    background-color: #00439c;
+}
+
+footer .play_logo{
+    width: 120px;
+}
+
+footer .language_globe{
+    width: 20px;
+    margin-right: 10px;
+}
+
+footer ul li{
+    list-style: none;
+    margin-bottom: 10px;
+}
+
+footer ul li:last-child{
+    margin-bottom: 0;
+}
+
+footer a{
+    color: white;
+    text-decoration: none;
+}
