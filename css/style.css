@@ -227,3 +227,8 @@ footer a{
     color: white;
     text-decoration: none;
 }
+
+footer .sie_logo{
+    width: 130px;
+    margin-bottom: 15px;
+}
