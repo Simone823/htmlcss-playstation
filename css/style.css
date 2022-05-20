@@ -1,40 +1,53 @@
-/* .container-fluid{
-    border: 2px solid red;
-} */
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
-/* .row{
-    border: 2px dashed blue;
-} */
+/* Scrollbar */
+::-webkit-scrollbar {
+    background-color: #1f1f1f;
+    width: 10px;
+}
 
-/* [class*="col"]{
-    border: 4px dotted orange;
-} */
+::-webkit-scrollbar-thumb {
+    background-color: #4598db;
+}
 
-/* --------------------------------------------- */
+::-webkit-scrollbar-thumb:hover {
+    background-color: #0e70c0;
+    transition: all 300ms ease-in-out;
+}
+
+/* ---------------------------------------- */
+
 
 /* Header */
-.logo_header{
+.logo_header {
     padding: 10px 15px;
 }
 
-.logo_header .logo img{
+.logo_header .logo img {
     width: 90px;
 }
+/* --------------------------------------------- */
 
 
 /* Nav */
-.search{
+.search {
     border: none;
     background-color: transparent;
 }
 
-.search img{
+.search img {
     width: 30px;
 }
+/* --------------------------------------------- */
 
 
 /* Sezione 1 returnal */
-#returnal{
+#returnal {
     background-image: url("../img/jumbo-bg.png");
     height: 680px;
     background-repeat: no-repeat;
@@ -43,82 +56,96 @@
     padding-bottom: 80px;
 }
 
-.logo_jumbo{
+.logo_jumbo {
     width: 100%;
 }
 
-.wrapper_returnal img{
+.wrapper_returnal img {
     width: 200px;
     display: block;
 }
 
-.btn_returnal{
+.btn_returnal {
     background-color: #cd3d0f;
     border: none;
 }
 
+.btn_returnal:hover {
+    background-color: #af330a;
+    transition: all 300ms linear;
+}
+/* --------------------------------------------- */
+
 /* Sezione 2 card */
-#cards .card_wrapper{
+#cards .card_wrapper {
     overflow: hidden;
     border-radius: 15px;
     cursor: pointer;
 }
 
-#cards .card_wrapper img{
+#cards .card_wrapper img {
     width: 100%;
-}
-
-#cards .card_wrapper:hover{
-    border: 4px solid #4598db;
-    transform: translateY(-8%);
-    transition: all 100ms ease-in-out;
-}
-
-#cards .card_wrapper:hover img{
     border-radius: 15px;
-    transform: scale(0.97);
 }
+
+#cards .card_wrapper:hover,
+#cards .card_wrapper.active {
+    border: 4px solid #4598db;
+    transition: all 250ms ease-in-out;
+}
+
+#cards .card_wrapper:hover img,
+#cards .card_wrapper img.active {
+    transform: scale(0.97);
+    transition: all 250ms ease-in-out;
+}
+/* --------------------------------------------- */
 
 /* Sezione 3 play5 */
-#play5 h4{
+#play5 h4 {
     color: #137dd1;
 }
 
-#play5 h5{
+#play5 h5 {
     color: #a5a5a5;
 }
 
-#play5 img{
+#play5 img {
     width: 100%;
     display: block;
 }
 
-#play5 .row:nth-child(3) img{
-    width: 50%;
-    display: block;
+#play5 .row:nth-child(3) [class*="col"] {
     opacity: 0.6;
-}
-
-#play5 .row:nth-child(3) h6{
-    color: #8a8a8a;
-}
-
-#play5 .row:nth-child(3) [class*="col"]:hover{
-    border-bottom: 3px solid #1f83d4;
+    border-bottom: 3px solid transparent;
     cursor: pointer;
 }
 
-#play5 .row:nth-child(3) [class*="col"]:hover img{
-    opacity: 1;
-    transition: all 200ms linear;
+#play5 .row:nth-child(3) img {
+    width: 50%;
+    display: block;
 }
 
-#play5 .row:nth-child(3) [class*="col"]:hover h6{
-    color: black;
+#play5 .row:nth-child(3) h6 {
+    color: #8a8a8a;
 }
+
+/* Hover play 5 section */
+#play5 .row:nth-child(3) [class*="col"]:hover {
+    border-bottom: 3px solid #1f83d4;
+    opacity: 1;
+    transition: all 300ms ease-in-out;
+}
+
+/* Active class play 5 section */
+#play5 .row:nth-child(3) [class*="col"].active {
+    border-bottom: 3px solid #1f83d4;
+    opacity: 1;
+}
+/* ---------------------------------------------- */
 
 /* Sezione 4 it takes two */
-#it_takes_two{
+#it_takes_two {
     background-image: url("../img/it-takes-two-hero-banner-desktop.jpg");
     height: 680px;
     background-repeat: no-repeat;
@@ -126,109 +153,135 @@
     background-position: center top;
     padding-bottom: 80px;
 }
+/* --------------------------------------------- */
 
 /* Sezione 5 nuove uscite */
-#new_releases{
+#new_releases {
     background-color: #1f1f1f;
 }
 
-#new_releases .card_wrapper img{
+#new_releases .card_wrapper {
+    min-height: 250px;
+}
+
+#new_releases .card_wrapper img {
     width: 100%;
+    aspect-ratio: 1/1;
     display: block;
     border-radius: 20px;
 }
+/* --------------------------------------------- */
 
 /* Sezione 6 esplora play4 */
-#play4 .card{
+#play4 .card {
     border: none;
 }
-
+/* --------------------------------------------- */
 
 /* Sezione 7 playstation plus */
-#ps_plus{
+#ps_plus {
     background-color: #bebcbb;
 }
 
-#ps_plus .row:first-child img{
+#ps_plus .row:first-child img {
     width: 250px;
     display: block;
 }
 
-#ps_plus .row .col-12.col-md-6:nth-child(2) img{
+#ps_plus .row .col-12.col-md-6:nth-child(2) img {
     width: 100%;
     display: block;
 }
 
-#ps_plus .btn.btn-outline-info{
+#ps_plus .btn.btn-outline-info {
     background-color: #d9dadc;
     border: none;
 }
+/* --------------------------------------------- */
 
 /* Sezione 8 playstation plus */
-#ps_now{
+#ps_now {
     background-color: #161c3b;
 }
 
-#ps_now .row:first-child img{
+#ps_now .row:first-child img {
     width: 250px;
     display: block;
 }
 
-#ps_now .row .col-12.col-md-6:nth-child(2) img{
+#ps_now .row .col-12.col-md-6:nth-child(2) img {
     width: 100%;
     display: block;
 }
 
-#ps_now .btn.btn-light:hover{
+#ps_now .btn.btn-light:hover {
     color: blue;
     transition: color 100ms ease-in-out;
 }
+/* --------------------------------------------- */
 
 /* Sezione 9 nuovi sconti Play Store */
-#discounts h6{
+#discounts h6 {
     color: #a5a5a5;
 }
 
-#discounts img{
+#discounts img {
     width: 100%;
     display: block;
 }
 
+#discounts img:hover {
+    transform: scale(0.97);
+    transition: all 300ms ease-out;
+}
+/* --------------------------------------------- */
+
 /* Sezione 10 social media */
-#social img{
+#social img {
     width: 90%;
     display: block;
 }
 
+#social img:hover {
+    transform: scale(0.97);
+    transition: all 300ms linear;
+}
+/* --------------------------------------------- */
+
 /* Footer */
-footer{
+footer {
     background-color: #00439c;
 }
 
-footer .play_logo{
+footer .play_logo {
     width: 120px;
 }
 
-footer .language_globe{
+footer .language_globe {
     width: 20px;
     margin-right: 10px;
 }
 
-footer ul li{
+footer ul li {
     list-style: none;
     margin-bottom: 10px;
 }
 
-footer ul li:last-child{
+footer ul li:last-child {
     margin-bottom: 0;
 }
 
-footer a{
+footer a {
     color: white;
     text-decoration: none;
 }
 
-footer .sie_logo{
+footer a:hover {
+    color: #4598db;
+    transition: color 300ms ease-in-out;
+}
+
+footer .sie_logo {
     width: 130px;
     margin-bottom: 15px;
 }
